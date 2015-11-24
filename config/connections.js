@@ -52,7 +52,7 @@ module.exports.connections = {
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *
   * http://en.wikipedia.org/wiki/MongoDB                                     *
-  *                                                                          *
+  * TODO: Set up test instance on MongoLab or whatever                                                                         *
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/

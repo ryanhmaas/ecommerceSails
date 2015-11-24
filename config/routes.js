@@ -32,9 +32,23 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  //See here: http://sailsjs.org/documentation/concepts/routes
+
   '/': {
     view: 'homepage'
   }
+  /*
+   * Example Routes
+    'get /signup': { view: 'conversion/signup' },
+    'post /signup': 'AuthController.processSignup',
+    'get /login': { view: 'portal/login' },
+    'post /login': 'AuthController.processLogin',
+    '/logout': 'AuthController.logout',
+    'get /me': 'UserController.profile'
+   */
+
+
+
 
   /***************************************************************************
   *                                                                          *
