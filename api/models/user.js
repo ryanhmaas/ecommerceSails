@@ -5,7 +5,7 @@
 //Schema:
 
 /*
-c_key: primary key
+user_key: primary key
 username: String
 password: String
 first_name: String
