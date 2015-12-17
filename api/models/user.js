@@ -1,41 +1,23 @@
 /**
-* User.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * User
+ *
+ * @module      :: Model
+ * @description :: This is the base user model
+ * @docs        :: http://waterlock.ninja/documentation
+ */
 
 module.exports = {
-  autoPK: true,
-  attributes: {
-      // user_key: {
-      //   type: 'string',
-      //   primaryKey: 'true',
-      //   unique: 'true'
-      // },
-      first_name: {
-        type: 'string',
-        required: true
-      },
-      last_name: {
-        type: 'string',
-        required: true
-      },
-      email: {
-        type: 'string',
-        required: true
-      },
-      username: {
-        type: 'string',
-        required: true
-      },
-      password: {
-        type: 'string',
-        required: true
-      },
-      login_count: {
-        type: 'integer',
-        defaultsTo: "1"
-    }
-  }
-}
+
+  attributes: require('waterlock').models.user.attributes({
+
+    /* e.g.
+    nickname: 'string'
+    */
+    first_name: 'string',
+    last_name: 'string'
+
+  }),
+
+  beforeCreate: require('waterlock').models.user.beforeCreate,
+  beforeUpdate: require('waterlock').models.user.beforeUpdate
+};
