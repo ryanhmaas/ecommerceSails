@@ -27,6 +27,8 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
-
+  //auto increments my primary keys
+  autoPK: true,
+  //this auto migrates our models
+  migrate: 'alter'
 };
