@@ -6,12 +6,13 @@
 */
 
 module.exports = {
+  autoPK: true,
   attributes: {
-      user_key: {
-        type: 'string',
-        primaryKey: 'true',
-        unique: 'true'
-      },
+      // user_key: {
+      //   type: 'string',
+      //   primaryKey: 'true',
+      //   unique: 'true'
+      // },
       first_name: {
         type: 'string',
         required: true
@@ -33,7 +34,8 @@ module.exports = {
         required: true
       },
       login_count: {
-        type: 'integer'
-      }
+        type: 'integer',
+        defaultsTo: "1"
+    }
   }
 }
